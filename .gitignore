@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+
+# Distribution / packagin
+.Python
+bin/
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg_info/
+.installed.cfg
+*.egg
+
+*.manifest
+*.spec
+
+pip-log.txt
+pip-selfcheck.json
+pip-delete-this-directory.txt
+
+*.log
+docs/_build/
+
+target/
