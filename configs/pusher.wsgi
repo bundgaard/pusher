@@ -11,3 +11,8 @@ for p in path:
 #sys.path.insert(0, '/var/www/pusher')
 #sys.stderr.write(",".join(sys.path))
 from Pusher import app as application
+if not application.debug:
+	import logging
+	file_handler = logging.FileHandler('/tmp/pusher.log')
+	file_handler.setLevel(logging.WARNING)
+	application.logger.addHandler(file_handler)
